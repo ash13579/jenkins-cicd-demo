@@ -13,8 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out the source code from GitHub...'
-                git 'https://github.com/ash13579/jenkins-cicd-demo.git'
-            }
+                git branch: 'main', url: 'https://github.com/ash13579/jenkins-cicd-demo.git'
         }
 
         // Stage 2: Build Docker Image
