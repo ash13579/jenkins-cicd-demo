@@ -8,7 +8,7 @@ pipeline {
     // This 'tools' block tells Jenkins to find the Docker tool we configured
     // in "Global Tool Configuration", install it, and add it to the PATH.
     tools {
-        docker 'docker-latest'
+        dockerTool 'docker-latest'
     }
 
     // 2. Stages
